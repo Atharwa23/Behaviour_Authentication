@@ -253,14 +253,6 @@ Unlike passwords, keystroke patterns are:
 - **Complementary**: Works alongside passwords for stronger authentication.
 
 ---
-
-## References
-- IEEE paper on keystroke dynamics: https://ieeexplore.ieee.org/abstract/document/5270346
-- Scikit-learn KNeighborsClassifier: https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
-- Scikit-learn LogisticRegression: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
-
----
-
 ## Summary Table
 
 | Aspect | Value |
@@ -273,6 +265,5 @@ Unlike passwords, keystroke patterns are:
 | **Algorithms** | KNN, Logistic Regression, SVM, RandomForest |
 | **Evaluation** | Accuracy, Confusion Matrix, Precision, Recall, F1, ROC, EER |
 | **Data Collection** | Fixed-text password typed multiple times by each user |
-| **Current Data** | 1 user (48 samples); need impostor samples to complete |
 
 ---
