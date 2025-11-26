@@ -100,11 +100,11 @@ All samples in the dataset are for the **same password/text** (appears to be a s
 
 ### Data Collection Flow
 ```
-├─ User "Nikhil" types password 100 times
-│  └─ All 100 labeled as "Genuine" (Target = Genuine)
-├─ User "Ali" types the same password 50 times (trying to pass as Nikhil)
+├─ User "Atharwa" types password 100 times
+│  └─ All 200 labeled as "Genuine" (Target = Genuine)
+├─ User "Ali" types the same password 50 times (trying to pass as Atharwa)
 │  └─ All 50 labeled as "Imposter" (Target = Imposter)
-├─ User "Bob" types the same password 50 times (trying to pass as Nikhil)
+├─ User "Bob" types the same password 50 times (trying to pass as Atharwa
 │  └─ All 50 labeled as "Imposter" (Target = Imposter)
 └─ ... more imposters
 ```
@@ -114,8 +114,8 @@ All samples in the dataset are for the **same password/text** (appears to be a s
 ## Dataset Summary from `KeystrokeData.csv`
 
 - **Total rows**: ~1,423 samples
-- **Target user**: "Nikhil" (the user being authenticated against)
-- **Genuine samples**: Multiple typing sessions from Nikhil (~30+ rows visible)
+- **Target user**: ")" (the user being authenticated against)
+- **Genuine samples**: Multiple typing sessions from ) (~300+ rows visible)
 - **Imposter samples**: Typing sessions from other users (Ali, Bob, Charlie, etc.) (~30+ rows per imposter)
 - **Class distribution**: Roughly balanced or imbalanced (check using `data['Target'].value_counts()`)
 
@@ -203,7 +203,7 @@ predictions = knn.predict(X_test)
    - Convert `KeystrokesInNano.csv` to milliseconds, or use only one file.
 
 3. **Decide on authentication scope**:
-   - **Single-user authentication**: Nikhil vs. imposters (current project approach)
+   - **Single-user authentication**: Atharwa vs. imposters (current project approach)
    - **Multi-user identification**: Which of N users typed this? (need samples from all N users)
 
 ---
