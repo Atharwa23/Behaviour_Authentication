@@ -31,7 +31,7 @@ Behavioural Authentication/
 
 ### [`Data/KeystrokeData.csv`](Data/KeystrokeData.csv)
 - **Samples**: ~1,423 typing sessions
-- **Target User**: "Nikhil"
+- **Target User**: "Atharwa"
 - **Genuine Samples**: Multiple sessions from the authenticated user
 - **Imposter Samples**: Sessions from other users attempting to impersonate the target user
 - **Class Distribution**: Roughly balanced
